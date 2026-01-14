@@ -43,9 +43,9 @@ header img {
 .navbar {
     width: 100%;
 }
-.nav-link:focus-visible {
+/* .nav-link:focus-visible {
     box-shadow: 0 0 0 .25rem rgb(253 253 253 / 70%) !important;
-}
+} */
 .navbar-toggler {
     box-shadow: 0 0 0 2px #fff;
     padding: 3px 8px;
@@ -87,7 +87,7 @@ footer {
     width: 100%;
 }
 .carousel-indicators button:focus {
-    outline: 2px solid #fff;
+    outline: 2px solid #ffffff70;
     opacity: .7;
 }
 
