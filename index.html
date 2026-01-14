@@ -11,55 +11,57 @@
 </head>
 <body class="bg-light">
     <header class="bg-dark text-white text-center py-3">
-
-                <a href="#porque" class="skip-link">Saltar al contenido</a>
-
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Menú principal">
-                    <div class="container mx-0 mw-100">
-                        <a class="navbar-brand d-flex align-items-center gap-3" href="#">
-                            <img src="./img/logo-accesibility.png" alt="Logo Accesibilidad" height="50">
-                            <span class="site-name">Accesibilidad Web</span>
-                        </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Mostrar menú">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
-                            <ul class="navbar-nav mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a href="#porque" class="nav-link text-white mx-3">¿Por qué?</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#errores-comunes" class="nav-link text-white mx-3">Errores comunes</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#video-description" class="nav-link text-white mx-3">Descripción de audio/vídeo</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#contacto" class="nav-link text-white mx-3">Contacto</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-
+        <!-- INCUMPLIMIENTO: No hay skip-link -->
+        <!-- <a href="#porque" class="skip-link">Saltar al contenido</a> -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container mx-0 mw-100">
+                <a class="navbar-brand d-flex align-items-center gap-3" href="#">
+                    <!-- INCUMPLIMIENTO: Imagen sin alt -->
+                    <img src="./img/logo-accesibility.png" height="50">
+                    <span class="site-name">Accesibilidad Web</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="#porque" class="nav-link text-white mx-3">¿Por qué?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#errores-comunes" class="nav-link text-white mx-3">Errores comunes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#video-description" class="nav-link text-white mx-3">Descripción de audio/vídeo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contacto" class="nav-link text-white mx-3">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <!-- INCUMPLIMIENTO: Botones sin aria-label ni texto -->
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
             </div>
             <div class="carousel-inner">
-                <h1>La accesibilidad web<br/>es el futuro</h1>
+                <!-- INCUMPLIMIENTO: h1 fuera de contexto semántico, y saltos de encabezado -->
+                <h4>La accesibilidad web<br/>es el futuro</h4>
                 <div class="carousel-item active">
-                    <img aria-disabled="true"  src="./img/slider1.jpg" class="d-block w-100" alt="Descripción de la primera imagen">
+                    <!-- INCUMPLIMIENTO: Imagen decorativa sin alt -->
+                    <img src="./img/slider1.jpg" class="d-block w-100">
                 </div>
                 <div class="carousel-item">
-                    <img aria-disabled="true" src="./img/slider2.jpg" class="d-block w-100" alt="Descripción de la segunda imagen">
+                    <img src="./img/slider2.jpg" class="d-block w-100">
                 </div>
                 <div class="carousel-item">
-                    <img aria-disabled="true" src="./img/slider3.jpg" class="d-block w-100" alt="Descripción de la tercera imagen">
+                    <img src="./img/slider3.jpg" class="d-block w-100">
                 </div>
             </div>
         </div>
@@ -69,7 +71,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-sm-4 pt-3">
-                        <img src="./img/logo-accesibility.png" class="img-fluid rounded" alt="Ideograma de un globo teráqueo con una mano con 6 dedos que sostiene un ojo.">
+                        <!-- INCUMPLIMIENTO: Imagen con alt vacío y sin propósito -->
+                        <img src="./img/logo-accesibility.png" class="img-fluid rounded" alt="">
                     </div>
                     <div class="col-12 col-sm-8 pt-4">
                         <h2>¿Por qué?</h2>
@@ -223,65 +226,45 @@
                 <p>Envíanos tu consulta y te responderemos pronto.</p>
                 <form id="contactForm" class="mx-auto" style="max-width: 500px;">
                     <hr/>
+                    <!-- INCUMPLIMIENTO: Inputs sin label -->
                     <div class="mb-3">
-                        <label for="nombre" class="form-label">Nombre:</label>
                         <input id="nombre" type="text" class="form-control" placeholder="Escribe tu nombre" required>
                     </div>
                     <div class="mb-3">
-                        <label for="email" class="form-label">Email:</label>
                         <input id="email" type="email" class="form-control" placeholder="Escribe tu email" required>
                     </div>
                     <div class="mb-3">
-                        <label for="edad" class="form-label">Edad:</label>
                         <input id="edad" type="number" class="form-control" placeholder="Escribe tu edad" required>
                     </div>
                     <div class="mb-3">
-                        <label for="education" class="form-label">Tipo de formación</label>
-                        <div id="educationHelp" class="form-text">Elija la opción que mejor describa su formación académica.</div>
-                        <select
-                            id="education"
-                            name="education"
-                            class="form-select"
-                            required
-                            aria-describedby="educationHelp educationError"
-                            aria-invalid="false"
-                        >
+                        <!-- INCUMPLIMIENTO: Select sin label ni aria-describedby -->
+                        <select id="education" name="education" class="form-select" required>
                             <option value="" disabled selected hidden>Seleccione una opción...</option>
-                            <optgroup>
-                                <option value="educacion-infantil">Educación Infantil</option>
-                                <option value="educacion-primaria">Educación Primaria</option>
-                                <option value="eso">Educación Secundaria Obligatoria (ESO)</option>
-                                <option value="bachillerato">Bachillerato</option>
-                            </optgroup>
-                            <optgroup label="Formación Profesional">
-                                <option value="fp-basica">Formación Profesional Básica (FPB)</option>
-                                <option value="fp-grado-medio">Ciclo Formativo de Grado Medio</option>
-                                <option value="fp-grado-superior">Ciclo Formativo de Grado Superior</option>
-                                <option value="certificado-profesionalidad">Certificado de Profesionalidad</option>
-                            </optgroup>
-                            <optgroup label="Enseñanza universitaria">
-                                <option value="grado-universitario">Grado universitario</option>
-                                <option value="master-universitario">Máster universitario</option>
-                                <option value="doctorado">Doctorado</option>
-                            </optgroup>
-                            <optgroup label="Enseñanzas especializadas">
-                                <option value="ensenanzas-artisticas">Enseñanzas Artísticas</option>
-                                <option value="ensenanzas-deportivas">Enseñanzas Deportivas</option>
-                                <option value="otras-formaciones">Otras formaciones</option>
-                            </optgroup>
+                            <option value="educacion-infantil">Educación Infantil</option>
+                            <option value="educacion-primaria">Educación Primaria</option>
+                            <option value="eso">Educación Secundaria Obligatoria (ESO)</option>
+                            <option value="bachillerato">Bachillerato</option>
+                            <option value="fp-basica">Formación Profesional Básica (FPB)</option>
+                            <option value="fp-grado-medio">Ciclo Formativo de Grado Medio</option>
+                            <option value="fp-grado-superior">Ciclo Formativo de Grado Superior</option>
+                            <option value="certificado-profesionalidad">Certificado de Profesionalidad</option>
+                            <option value="grado-universitario">Grado universitario</option>
+                            <option value="master-universitario">Máster universitario</option>
+                            <option value="doctorado">Doctorado</option>
+                            <option value="ensenanzas-artisticas">Enseñanzas Artísticas</option>
+                            <option value="ensenanzas-deportivas">Enseñanzas Deportivas</option>
+                            <option value="otras-formaciones">Otras formaciones</option>
                         </select>
-                        <div id="educationError" class="invalid-feedback" aria-live="polite">
-                            Por favor, seleccione su tipo de formación.
-                        </div>
                     </div>
                     <div class="mb-3">
-                        <label for="mensaje" class="form-label">Mensaje:</label>
+                        <!-- INCUMPLIMIENTO: Textarea sin label -->
                         <textarea id="mensaje" class="form-control" placeholder="Mensaje"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Enviar</button>
                     <br/><br/>
+                    <!-- INCUMPLIMIENTO: Enlace no descriptivo -->
                     <span class="text-small small">
-                        AL enviar este formulario lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse iaculis quam in elit sodales, ut bibendum elit dignissim. Vivamus pretium massa id lorem condimentum lobortis. Nullam ultricies nisi non eros cursus porta. Sed tempor eleifend dolor, eu vestibulum nisl rutrum at. Integer eget euismod dolor, ut efficitur justo. Nullam vitae ultricies nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada <a href="https://www.google.com" target="_blank">fames ac turpis egestas</a>.
+                        AL enviar este formulario lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse iaculis quam in elit sodales, ut bibendum elit dignissim. Vivamus pretium massa id lorem condimentum lobortis. Nullam ultricies nisi non eros cursus porta. Sed tempor eleifend dolor, eu vestibulum nisl rutrum at. Integer eget euismod dolor, ut efficitur justo. Nullam vitae ultricies nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada <a href="https://www.google.com" target="_blank">haz clic aquí</a>.
                     </span>
                     <div id="formSuccess" class="alert alert-success mt-3 visually-hidden" role="status" aria-live="polite">
                         ¡Formulario enviado correctamente!
