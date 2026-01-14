@@ -1,2 +1,2 @@
 # accesibility-ok
-Simple website that complies with standard Accessibility guidelines.
+Simple website that do not complies with standard Accessibility guidelines.
