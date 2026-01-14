@@ -1,0 +1,34 @@
+WEBVTT
+
+NOTE
+To enable cue styles, please remove above 'NOTE' line as well as this line.
+STYLE
+::cue {
+  font-family: Arial;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+1
+00:00:00.000 --> 00:00:04.000 
+Buenos días compañeros de NTT DATA.
+
+2
+00:00:04.000 --> 00:00:08.000 
+Esto es un vídeo de ejemplo, para saber cómo utilizar
+
+3
+00:00:08.000 --> 00:00:11.000 
+las descripciones de vído / audio.
+
+4
+00:00:11.000 --> 00:00:14.000 
+Espero que les sirva de ayuda
+
+5
+00:00:14.000 --> 00:00:17.000 
+y que lo podáis utilizar en futuros proyectos.
+
+6
+00:00:17.000 --> 00:00:18.000 
+Muchas gracias.

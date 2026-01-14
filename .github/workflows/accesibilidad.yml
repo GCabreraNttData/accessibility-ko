@@ -1,0 +1,37 @@
+name: Accessibility Test
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  accessibility:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - name: Install dependencies
+        run: npm install
+      - name: Run accessibility test on all markup files
+        run: |
+          shopt -s globstar nullglob
+          for file in **/*.{html,htm,jsx,tsx}; do
+            echo "Testing $file"
+            node accesibilidad-axe.mjs "$file" --json || exit 1
+          done
+      - name: Generate Markdown report
+        if: always()
+        run: node generate-report.js
+      - name: Upload accessibility report artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: accessibility-report
+          path: |
+            accesibility-report.md
+            accesibility-report.html
