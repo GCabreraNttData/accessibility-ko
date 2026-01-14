@@ -56,7 +56,7 @@ header img {
 .carousel-inner h1 {
     position: absolute;
     z-index: 2;
-    color: #fff;
+    color: #ffffffb2;
     text-shadow: 0 1px 3px #0005;
     top: 30%;
     right: 0;
@@ -66,7 +66,7 @@ header img {
     text-align: center;
 }
 .carousel-item {
-    filter: brightness(0.4);
+    filter: brightness(1);
 }
 section {
     margin: 0;
